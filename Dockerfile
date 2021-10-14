@@ -17,5 +17,6 @@ ENV PATH="/opt/conda/bin:$PATH"
 RUN conda update -qy conda \
     && conda install -y -c conda-forge \
       jupyterlab \
-      py3dmol 
+      py3dmol \
+      matplotlib
 
