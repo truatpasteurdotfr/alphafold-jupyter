@@ -1,5 +1,5 @@
 # Jupyter extension for the alphafold docker image
-
+[![Docker](https://github.com/truatpasteurdotfr/alphafold-jupyter/actions/workflows/main.yml/badge.svg)](https://github.com/truatpasteurdotfr/alphafold-jupyter/actions/workflows/main.yml)
 ## why?
 - to be able to re-use the pkl/pdb files saved to display as on the colab page
 
