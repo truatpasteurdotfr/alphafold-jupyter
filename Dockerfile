@@ -16,6 +16,7 @@ FROM  ghcr.io/truatpasteurdotfr/alphafold:main
 ENV PATH="/opt/conda/bin:$PATH"
 RUN conda update -qy conda \
     && conda install -y -c conda-forge \
+      ipykernel \
       jupyterlab \
       py3dmol \
       matplotlib
