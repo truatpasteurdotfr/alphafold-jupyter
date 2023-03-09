@@ -19,5 +19,6 @@ RUN conda update -qy conda \
       ipykernel \
       jupyterlab \
       py3dmol \
-      matplotlib
+      matplotlib \
+    && conda clean --all --yes
 
