@@ -14,11 +14,12 @@ FROM  ghcr.io/truatpasteurdotfr/alphafold:main
 
 # Install conda packages.
 ENV PATH="/opt/conda/bin:$PATH"
+ENV CONDA_PLUGINS_AUTO_ACCEPT_TOS="yes"
 RUN conda update -qy conda \
     && conda install -y -c conda-forge \
       ipykernel \
       jupyterlab \
       py3dmol \
       matplotlib \
-    && conda clean --all --yes
+    && conda clean --all --force-pkgs-dirs --yes
 
