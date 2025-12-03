@@ -15,8 +15,7 @@ FROM  ghcr.io/truatpasteurdotfr/alphafold:main
 # Install conda packages.
 ENV PATH="/opt/conda/bin:$PATH"
 ENV CONDA_PLUGINS_AUTO_ACCEPT_TOS="yes"
-RUN conda update -qy conda \
-    && conda install -qy -c conda-forge \
+RUN conda install -qy -c conda-forge \
       ipykernel \
       jupyterlab \
       py3dmol \
