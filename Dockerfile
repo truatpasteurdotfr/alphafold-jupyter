@@ -10,12 +10,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM  ghcr.io/truatpasteurdotfr/alphafold:main
+#FROM  ghcr.io/truatpasteurdotfr/alphafold:main
+FROM  ghcr.io/truatpasteurdotfr/alphafold-conda-forge:main
 
 # Install conda packages.
 ENV PATH="/opt/conda/bin:$PATH"
-ENV CONDA_PLUGINS_AUTO_ACCEPT_TOS="yes"
-RUN conda install -qy -c conda-forge \
+RUN conda install -qy \
       ipykernel \
       jupyterlab \
       py3dmol \
